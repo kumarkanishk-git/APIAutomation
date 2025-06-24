@@ -1,0 +1,25 @@
+{
+  "username": "postman",
+  "password": "password",
+  "endpoint": "users",
+  "languages": [
+    "Java",
+    "JavaScript",
+    "Python"
+  ],
+  "technology": [
+    "AI",
+    "ML"
+  ],
+  "marks": [
+    45,
+    32,
+    39
+  ],
+  "employee": [
+    "name: John",
+    "email: johm23@abc.com",
+    "phone: 6385634729",
+    "city: Noida"
+  ]
+}

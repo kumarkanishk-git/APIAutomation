@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="API Automation Session Regression Suite" parallel="classes" thread-count="5">
+    <listeners>
+        <listener class-name="utils.RetryListener"></listener>
+    </listeners>
+    <test name="API Users TestCases">
+        <classes>
+            <class name="userManagement.getPostmanEcho"/>
+            <class name="userManagement.getErgast"/>
+            <class name="userManagement.getUsers"/>
+        </classes>
+    </test>
+</suite>

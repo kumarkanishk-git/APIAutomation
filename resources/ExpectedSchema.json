@@ -1,0 +1,413 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "color": {
+              "type": "string"
+            },
+            "capacity": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "color",
+            "capacity"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "data"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "data": {
+          "type": "null"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "data"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "color": {
+              "type": "string"
+            },
+            "capacity GB": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "color",
+            "capacity GB"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "data"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "price": {
+              "type": "number"
+            },
+            "color": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "price",
+            "color"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "data"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "price": {
+              "type": "number"
+            },
+            "color": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "price",
+            "color"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "data"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "generation": {
+              "type": "string"
+            },
+            "price": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "generation",
+            "price"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "data"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "year": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "number"
+            },
+            "CPU model": {
+              "type": "string"
+            },
+            "Hard disk size": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "year",
+            "price",
+            "CPU model",
+            "Hard disk size"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "data"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "Strap Colour": {
+              "type": "string"
+            },
+            "Case Size": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "Strap Colour",
+            "Case Size"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "data"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "Color": {
+              "type": "string"
+            },
+            "Description": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "Color",
+            "Description"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "data"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "Capacity": {
+              "type": "string"
+            },
+            "Screen size": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "Capacity",
+            "Screen size"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "data"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "Capacity": {
+              "type": "string"
+            },
+            "Screen size": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "Capacity",
+            "Screen size"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "data"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "Generation": {
+              "type": "string"
+            },
+            "Price": {
+              "type": "string"
+            },
+            "Capacity": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "Generation",
+            "Price",
+            "Capacity"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "data"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "Generation": {
+              "type": "string"
+            },
+            "Price": {
+              "type": "string"
+            },
+            "Capacity": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "Generation",
+            "Price",
+            "Capacity"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "data"
+      ]
+    }
+  ]
+}
