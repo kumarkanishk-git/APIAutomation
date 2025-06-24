@@ -13,7 +13,7 @@ import static io.restassured.RestAssured.baseURI;
 import static io.restassured.RestAssured.given;
 import static org.testng.Assert.assertEquals;
 
-public class getPostmanEcho extends BaseTest {
+public class getPostmanEcho{
     @Test
     public void validateWithTestDataFromJson() throws IOException, ParseException {
         baseURI = "https://postman-echo.com";

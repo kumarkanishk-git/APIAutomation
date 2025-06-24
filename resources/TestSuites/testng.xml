@@ -3,7 +3,7 @@
 <suite name="API Automation Test Suite">
     <test name="API Test Cases">
         <classes>
-            <class name="userManagement.getPost"/>
+            <class name="userManagement.getPostmanEcho"/>
         </classes>
     </test>
 </suite>
