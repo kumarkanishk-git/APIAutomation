@@ -250,7 +250,7 @@ public class getUsers extends BaseTest {
         given().queryParam("id", id).queryParam("name", name).when().get("/users").then().statusCode(200);
     }
 
-    @Test
+    @Test(description = "testJsonArray changes")
     public void testJsonArray() throws IOException, ParseException {
         JsonReader.getJsonArrayData("languages", 0);
         JSONArray jsonArray = JsonReader.getJsonArray("employee");
