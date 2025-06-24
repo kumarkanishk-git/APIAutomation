@@ -227,7 +227,7 @@ public class getUsers extends BaseTest {
         softAssertUtil.assertAll();
     }
 
-    @Test
+    @Test(description ="validateWithSoftAssertUtil" )
     public void validateWithSoftAssertUtil() {
         baseURI = "https://reqres.in/api";
         Response response = given().queryParam("page", 2).when().get("/users");
@@ -250,7 +250,7 @@ public class getUsers extends BaseTest {
         given().queryParam("id", id).queryParam("name", name).when().get("/users").then().statusCode(200);
     }
 
-    @Test(description = "testJsonArray")
+    @Test
     public void testJsonArray() throws IOException, ParseException {
         JsonReader.getJsonArrayData("languages", 0);
         JSONArray jsonArray = JsonReader.getJsonArray("employee");
