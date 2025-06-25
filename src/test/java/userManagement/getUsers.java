@@ -34,17 +34,17 @@ import static org.hamcrest.MatcherAssert.*;
 import static org.hamcrest.Matchers.*;
 
 public class getUsers extends BaseTest {
-    SoftAssertUtil softAssertUtil = new SoftAssertUtil();
+    //SoftAssertUtil softAssertUtil = new SoftAssertUtil();
 
     @Test(groups = {"SmokeSuite", "RegressionSuite"})
     public void getUserData() {
-        ExtentReport.extentlog = ExtentReport.extentreport.startTest("getUserData","Validate 200 status code");
+        ExtentReport.extentlog = ExtentReport.extentreport.startTest("getUserData", "Validate 200 status code");
         given().when().get("https://reqres.in/api/users?page=2").then().assertThat().statusCode(200);
     }
 
     @Test(groups = "RegressionSuite")
     public void validateGetResponseBody() {
-        ExtentReport.extentlog = ExtentReport.extentreport.startTest("validateGetResponseBody","Validate 200 status code");
+        ExtentReport.extentlog = ExtentReport.extentreport.startTest("validateGetResponseBody", "Validate 200 status code");
         //Set base URI for the API
         baseURI = "https://jsonplaceholder.typicode.com";
         //Send a Get request and validate the response body using 'then'
@@ -223,18 +223,18 @@ public class getUsers extends BaseTest {
     @Test
     public void softAssertion() {
 
-        softAssertUtil.assertTrue(true, "true");
-        softAssertUtil.assertAll();
+        SoftAssertUtil.assertTrue(true, "true");
+        SoftAssertUtil.assertAll();
     }
 
-    @Test(description ="validateWithSoftAssertUtil" )
+    @Test(description = "validateWithSoftAssertUtil")
     public void validateWithSoftAssertUtil() {
         baseURI = "https://reqres.in/api";
         Response response = given().queryParam("page", 2).when().get("/users");
 
         //Assert that response status code
-        softAssertUtil.assertEquals(response.getStatusCode(), StatusCode.SUCCESS.code, "Status code is not 200");
-        softAssertUtil.assertAll();
+        SoftAssertUtil.assertEquals(response.getStatusCode(), StatusCode.SUCCESS.code, "Status code is not 200");
+        SoftAssertUtil.assertAll();
         System.out.println("validateWithSoftAssertUtil executed successfully");
     }
 

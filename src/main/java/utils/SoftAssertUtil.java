@@ -3,38 +3,44 @@ package utils;
 import org.testng.asserts.SoftAssert;
 
 public class SoftAssertUtil {
-    private SoftAssert softAssert;
+    private static SoftAssert softAssertInstance;
 
 
-    public SoftAssertUtil() {
-        softAssert = new SoftAssert();
+    private SoftAssertUtil() {
     }
 
-    public void assertTrue(boolean condition, String message) {
+    public static SoftAssert getInstance() {
+        if (softAssertInstance == null) {
+            softAssertInstance = new SoftAssert();
+        }
+        return softAssertInstance;
+    }
+
+    public static void assertTrue(boolean condition, String message) {
         try {
-            softAssert.assertTrue(condition, message);
+            getInstance().assertTrue(condition, message);
         } catch (AssertionError e) {
-            softAssert.fail(message);
+            getInstance().fail(message);
         }
     }
 
-    public void assertEquals(Object actual, Object expected, String message) {
+    public static void assertEquals(Object actual, Object expected, String message) {
         try {
-            softAssert.assertEquals(actual, expected, message);
+            getInstance().assertEquals(actual, expected, message);
         } catch (AssertionError e) {
-            softAssert.fail(message);
+            getInstance().fail(message);
         }
     }
 
-    public void assertNotEquals(Object actual, Object expected, String message) {
+    public static void assertNotEquals(Object actual, Object expected, String message) {
         try {
-            softAssert.assertNotEquals(actual, expected, message);
+            getInstance().assertNotEquals(actual, expected, message);
         } catch (AssertionError e) {
-            softAssert.fail(message);
+            getInstance().fail(message);
         }
     }
 
-    public void assertAll() {
-        softAssert.assertAll();
+    public static void assertAll() {
+        getInstance().assertAll();
     }
 }
