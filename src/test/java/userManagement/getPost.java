@@ -25,7 +25,7 @@ import static io.restassured.RestAssured.given;
 import static org.testng.Assert.assertEquals;
 
 public class getPost {
-    SoftAssertUtil softAssertUtil = new SoftAssertUtil();
+    //SoftAssertUtil softAssertUtil = new SoftAssertUtil();
     String id;
 
     private static FileInputStream fileInputStreamMethod(String requestBodyFileName) {
